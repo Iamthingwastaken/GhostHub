@@ -470,7 +470,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	local UIHidden = false
 
 	WindowConfig = WindowConfig or {}
-	WindowConfig.Name = WindowConfig.Name or "Orion Library"
+	WindowConfig.Name = WindowConfig.Name or "Ghost hub"
 	WindowConfig.ConfigFolder = WindowConfig.ConfigFolder or WindowConfig.Name
 	WindowConfig.SaveConfig = WindowConfig.SaveConfig or false
 	WindowConfig.HidePremium = WindowConfig.HidePremium or false
@@ -480,8 +480,8 @@ function OrionLib:MakeWindow(WindowConfig)
 	WindowConfig.IntroText = WindowConfig.IntroText or "Orion Library"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
-	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://8834748103"
-	WindowConfig.IntroIcon = WindowConfig.IntroIcon or "rbxassetid://8834748103"
+	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://119092493183744"
+	WindowConfig.IntroIcon = WindowConfig.IntroIcon or "rbxassetid://119092493183744"
 	OrionLib.Folder = WindowConfig.ConfigFolder
 	OrionLib.SaveCfg = WindowConfig.SaveConfig
 
@@ -650,7 +650,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		MainWindow.Visible = false
 		UIHidden = true
 		OrionLib:MakeNotification({
-			Name = "Interface Hidden",
+			Name = "Ghost hub Hidden",
 			Content = "Tap RightShift to reopen the interface",
 			Time = 5
 		})
@@ -1710,7 +1710,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		return ElementFunction   
 	end  
 	
-	GhostHubLib:MakeNotification({
+	OrionLib:MakeNotification({
 		Name = "UI Library Upgrade",
 		Content = "New UI Library Available at sirius.menu/discord and sirius.menu/rayfield",
 		Time = 5
