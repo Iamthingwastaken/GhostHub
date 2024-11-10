@@ -35,7 +35,7 @@ local Success, Response = pcall(function()
 end)
 
 if not Success then
-	warn("\nOrion Library - Failed to load Feather Icons. Error code: " .. Response .. "\n")
+	warn("\nGhost Hub - Failed to load Feather Icons. Error code: " .. Response .. "\n")
 end	
 
 local function GetIcon(IconName)
@@ -47,7 +47,7 @@ local function GetIcon(IconName)
 end   
 
 local Orion = Instance.new("ScreenGui")
-Orion.Name = "Orion"
+Orion.Name = "Ghost"
 if syn then
 	syn.protect_gui(Orion)
 	Orion.Parent = game.CoreGui
@@ -477,7 +477,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	if WindowConfig.IntroEnabled == nil then
 		WindowConfig.IntroEnabled = true
 	end
-	WindowConfig.IntroText = WindowConfig.IntroText or "Orion Library"
+	WindowConfig.IntroText = WindowConfig.IntroText or "Ghost hub"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
 	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://119092493183744"
@@ -1726,5 +1726,3 @@ function OrionLib:Destroy()
 end
 
 return OrionLib
-icon
-Go to Youtube Shorts
